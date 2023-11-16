@@ -3,9 +3,6 @@ from levelup.direction import Direction
 from levelup.map import Map
 from levelup.position import Position
 
-
-
-
 class GameStatus:
     character_name: str = ""
     current_position: tuple = (-100,-100)
@@ -28,11 +25,9 @@ class GameController:
         self.map = Map()
         self.character.enter_map(self.map)
 
-        # Status code is written for you
         self.status.current_position = (self.character.current_position.x, self.character.current_position.y)
         self.status.move_count = 0
 
-    # Pre-written for you
     def create_character(self, character_name: str) -> None:
         self.character = Character(character_name)
         self.status.character_name = self.character.name
@@ -42,9 +37,6 @@ class GameController:
         self.status.current_position = (self.character.current_position.x, self.character.current_position.y)
         self.status.move_count = self.status.move_count + 1
        
-    ## ************************************************
-    ## METHODS THAT EXIST JUST TO HELP WITH TESTING -- PREWRITTEN FOR YOU
-    ## ************************************************
     def set_character_position(self, xycoordinates: tuple) -> None:
         x = xycoordinates[0]
         y = xycoordinates[1]
@@ -60,5 +52,3 @@ class GameController:
     def initalize_game_for_testing(self) -> None:
         self.create_character("")
         self.start_game()
-
-    
