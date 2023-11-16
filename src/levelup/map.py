@@ -4,7 +4,7 @@ from levelup.direction import Direction
 
 class Map ():
 
-    starting_position = Position(0,0)
+    starting_position = Position(5,5)
     positions = []
     size: Tuple[int, int] = (10, 10)
 
