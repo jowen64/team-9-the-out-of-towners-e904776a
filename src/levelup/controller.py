@@ -23,8 +23,10 @@ class GameController:
         self.status = GameStatus()
 
     def start_game(self):
-        # TODO: implement method here and remove the print statement below
-        print("start_game method not yet implemented")            
+        if self.character == None:
+            self.create_character(character_name="")
+        self.map = Map()
+        self.character.enter_map(self.map)
 
         # Status code is written for you
         self.status.current_position = (self.character.current_position.x, self.character.current_position.y)
