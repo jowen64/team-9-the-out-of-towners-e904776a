@@ -48,7 +48,3 @@ class Map ():
             return new_position
         else:
             return current_position
-
-    def start_pos(self):
-        start_posit = starting_position
-        
