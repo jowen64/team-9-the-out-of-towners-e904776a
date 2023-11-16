@@ -8,5 +8,6 @@ class MapDouble (Map):
     STUBBED_Y = 4
 
     def calculate_new_position(self, current_position: Position, direction: Direction) -> Position:
-        # What should we return here so our character tests will work in isolation?
-        return None
+                # What should we return here so our character tests will work in isolation?
+        return Position(self.STUBBED_X, self.STUBBED_Y)
+        

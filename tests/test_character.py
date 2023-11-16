@@ -23,13 +23,13 @@ class TestCharacter(TestCase):
         self.assertEqual(testobj.current_position, stubbed_map.starting_position)
 
     # # Remove comments to run this test, which will motivate you to write the production method
-    # def test_move_updates_position(self):
-    #     testobj = Character(self.ARBITRARY_NAME)
-    #     stubbed_map = MapDouble()
-    #     testobj.map = stubbed_map
-        
-    #     testobj.move(Direction.EAST)
+    def test_move_updates_position(self):
+        testobj = Character(self.ARBITRARY_NAME)
+        stubbed_map = MapDouble()
+        testobj.map = stubbed_map
 
-    #     self.assertEqual(stubbed_map.STUBBED_X, testobj.current_position.x)
-    #     self.assertEqual(stubbed_map.STUBBED_Y, testobj.current_position.y)
+        testobj.move(Direction.EAST)
+
+        self.assertEqual(stubbed_map.STUBBED_X, testobj.current_position.x)
+        self.assertEqual(stubbed_map.STUBBED_Y, testobj.current_position.y)
 
