@@ -38,7 +38,7 @@ class GameApp:
                 self.quit()
             direction = Direction(response)
             self.controller.move(direction)
-            print(f"You moved {direction.name}")
+            print(f"You moved {direction.name}...WHY?")
             print(self.controller.status)
                 
 
