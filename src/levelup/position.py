@@ -7,10 +7,8 @@ class Position ():
         self.x = x
         self.y = y
         
-    # Overriding the equals operator to make sure we are comparing values on positions correctly - prewritten for you
     def __eq__(self, obj):
         if self.x == obj.x and self.y == obj.y:
             return True
         else:
             return False
-
