@@ -41,13 +41,7 @@ class GameController:
         self.character.move(direction)
         self.status.current_position = (self.character.current_position.x, self.character.current_position.y)
         self.status.move_count = self.status.move_count + 1
-        #TODO: implement method here and remove the print statement below
-        #print("move method not yet implemented")
-
-        # Status code is written for you
-        self.status.current_position = (self.character.current_position.x, self.character.current_position.y)
-        self.status.move_count = self.status.move_count + 1
-
+       
     ## ************************************************
     ## METHODS THAT EXIST JUST TO HELP WITH TESTING -- PREWRITTEN FOR YOU
     ## ************************************************
