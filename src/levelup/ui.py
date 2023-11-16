@@ -29,6 +29,7 @@ class GameApp:
         print(f"Welcome, {self.controller.status.character_name}")
 
     def move_loop(self):
+        print(f"{self.controller.status.character_name}, you are starting on {self.starting_pos}")
         while True:
             response = self.prompt(
                 f"Where would you like to go? {VALID_DIRECTIONS}\n(or q to quit)",
@@ -41,7 +42,6 @@ class GameApp:
             print(f"You moved {direction.name}...WHY?")
             print(self.controller.status)
                 
-
     def start(self):
         self.create_character()
         self.controller.start_game()
