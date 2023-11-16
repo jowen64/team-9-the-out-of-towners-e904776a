@@ -26,7 +26,7 @@ class GameApp:
     def create_character(self):
         character = self.prompt("Welcome to the Out-of-Towners\n Enter character name", lambda x: len(x) > 0)
         self.controller.create_character(character)
-        print(f"Welcome, {self.controller.status.character_name} You are starting on {self.starting_pos}")
+        print(f"Welcome, {self.controller.status.character_name} You are starting on {self.controller.qstatus.current_position}")
 
     def move_loop(self):
         while True:

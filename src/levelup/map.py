@@ -51,3 +51,4 @@ class Map ():
 
     def start_pos(self):
         start_posit = starting_position
+        
