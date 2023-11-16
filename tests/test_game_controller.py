@@ -30,16 +30,16 @@ class TestGameController(TestCase):
         self.assertEqual(0, testobj.status.move_count)
 
     # # Remove comments to run this test, which will motivate you to write the production method
-    # def test_move_calls_char_move(self):
-    #     testobj = GameController()
-    #     arbitrary_name = "ARBITRARY"
-    #     mock_char = CharacterDouble(arbitrary_name)
-    #     testobj.character = mock_char
-    #     arbitrary_direction = Direction.NORTH
+    def test_move_calls_char_move(self):
+        testobj = GameController()
+        arbitrary_name = "ARBITRARY"
+        mock_char = CharacterDouble(arbitrary_name)
+        testobj.character = mock_char
+        arbitrary_direction = Direction.NORTH
 
-    #     testobj.move(arbitrary_direction)
+        testobj.move(arbitrary_direction)
 
-    #     self.assertTrue(mock_char.is_move_called)
-    #     self.assertEqual(mock_char.last_move_direction, arbitrary_direction)
+        self.assertTrue(mock_char.is_move_called)
+        self.assertEqual(mock_char.last_move_direction, arbitrary_direction)
         
         

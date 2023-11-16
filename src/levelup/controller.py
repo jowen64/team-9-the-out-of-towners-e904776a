@@ -38,8 +38,11 @@ class GameController:
         self.status.character_name = self.character.name
 
     def move(self, direction: Direction) -> None:
-        # TODO: implement method here and remove the print statement below
-        print("move method not yet implemented")
+        self.character.move(direction)
+        self.status.current_position = (self.character.current_position.x, self.character.current_position.y)
+        self.status.move_count = self.status.move_count + 1
+        #TODO: implement method here and remove the print statement below
+        #print("move method not yet implemented")
 
         # Status code is written for you
         self.status.current_position = (self.character.current_position.x, self.character.current_position.y)
