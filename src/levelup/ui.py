@@ -24,7 +24,7 @@ class GameApp:
         return response
 
     def create_character(self):
-        character = self.prompt("Enter character name", lambda x: len(x) > 0)
+        character = self.prompt("Welcome to the Out-of-Towners\n Enter character name", lambda x: len(x) > 0)
         self.controller.create_character(character)
         print(f"Welcome, {self.controller.status.character_name}")
 
