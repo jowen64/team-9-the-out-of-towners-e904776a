@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     Test start of game. Let's play \n\n https://raw.githubusercontent.com/level-up-program/python-robot-reference/main/tests/robot/images/gamerErin.png
+Documentation     Test start of game. Let's play \n\n /config/workspace/tests/robot/images/levelup_diagram.jpg
 Test Template     Start new game
 Library           StartGameLibrary.py
 
