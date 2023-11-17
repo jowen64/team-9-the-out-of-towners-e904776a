@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     Test start of game. Let's play \n\n https://github.com/level-up-program/team-9-the-out-of-towners-e904776a/blob/main/tests/robot/images/levelup_diagram.jpg
+Documentation     Test start of game. Let's play \n\n https://raw.githubusercontent.com/level-up-program/python-robot-reference/main/tests/robot/images/levelup_diagram.jpg
 Test Template     Start new game
 Library           StartGameLibrary.py
 
