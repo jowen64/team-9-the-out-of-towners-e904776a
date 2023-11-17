@@ -7,6 +7,7 @@ Library           CreateCharacterLibrary.py
 Provided name           Erin                   Erin
 Default name            ${EMPTY}               Character
 
+
 *** Keywords ***
 Create character
     [Arguments]    ${characterNameInput}    ${characterNameOutput}

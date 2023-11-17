@@ -4,7 +4,7 @@ Test Template     Start new game
 Library           StartGameLibrary.py
 
 *** Test Cases ***      numPositions     startingPositionX    startingPositionY  startingMoveCount
-Blank character name    100              0                    0                  0
+Blank character name    100              5                    5                  0
 
 *** Keywords ***
 Start new game
